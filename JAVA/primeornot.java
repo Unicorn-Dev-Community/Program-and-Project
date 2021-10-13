@@ -17,10 +17,11 @@ class Prime
         {
             if(num%i==0)
             {
-                count++;	        
+                count++;
+                break;
             }
         }
-        if(count==2)
+        if(count==1)
             System.out.println("prime number ");
         else
             System.out.println("Not a prime number ");        
