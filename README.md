@@ -1,12 +1,12 @@
-# Algorithm repository
+# Programs  and Project Repository 
 
 
-A repository of algorithms for computational geometry.
+A repository for adding programs and projects of any kind starting from beginners level to expert ones 
 
 ## Contributing to the Repository:
-It would be great for people to help improve the repository, and we welcome it. We aim to not only provide a vast range of algorithms, but also very clearly explain them in detailed information. We may even ask experienced researchers to do this.
+It would be great for people to help improve the repository, and we welcome it. We aim to provide everyone with wide range of programs and projects.
 
-The algorithms are written in Python, and the repository is a git repo, hosted at github.com. Contributions to the repository should be made using github's pull request mechanism.
+Programs and Projects  can be  written in any  language, and the repository is a git repo, hosted at github.com. Contributions to the repository should be made using github's pull request mechanism.
 
 ## License:MIT license
 
@@ -14,4 +14,4 @@ The algorithms are written in Python, and the repository is a git repo, hosted a
 To contact me, you can email me at deosaju2260@gmail.com, or send me a message on linkedin. I'm also available on gitter.im for questions and discussions. It would be really nice of you to say hi! :)
 
 Thank you for reading! Please look forward to many new contribution soon! :D :D :D :D ___________________________________________________________________________________
-Algorithm repository, available at https://github.com/Unicorn-Dev-Community/Algorithm-repo. peer reviewed and licensed CC-BY UnicornDev.
+Programs and Projects repository, available at https://github.com/Unicorn-Dev-Community/Programs_and_Project. peer reviewed and licensed CC-BY UnicornDev.
