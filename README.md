@@ -1,9 +1,7 @@
 # Algorithm repository
 
 
-A repository of algorithms for computational geometry. Curated to feature cutting-edge research, not just the most well-known, easy to find algorithms. All sources are peer reviewed and licensed CC-BY (where possible). Please let me know if you know any other suitable algorithms.
-
-Introduction for an informative and factual blog post about the repository of algorithms for computational geometry. The aim is to provide cutting-edge research, not well known or simple to find ones; all articles are peer reviewed and licensed CC-BY (where possible). Please let me know if you know any other suitable algorithms.
+A repository of algorithms for computational geometry.
 
 ##Contributing to the Repository:
 It would be great for people to help improve the repository, and we welcome it. We aim to not only provide a vast range of algorithms, but also very clearly explain them in detailed information. We may even ask experienced researchers to do this.
