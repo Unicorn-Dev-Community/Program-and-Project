@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    transition: 0.3s ease;
+}
+
+body.dark {
+    background-color: #000;
+}
+
+header {
+    min-height: 300px;
+    background: url('./images/day.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3 ease;
+}
+
+body.dark header {
+    background-color: #2929294b;
+    background-blend-mode: multiply;
+}
+
+.container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.list-container div.container {
+    width: 450px;
+    min-height: 400px;
+    position: absolute;
+    top: -200px;
+    /* text-align: center; */
+}
+
+.list-container div.container h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+div.list-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border-radius: 5px;
+    height: 40px;
+    opacity: 0.93;
+}
+
+body.dark div.list-item {
+    background-color: #363636;
+}
+
+div.list-item input {
+    border: 0px;
+    height: 95%;
+    font-weight: 400;
+    color: rgb(88, 86, 86);
+}
+
+body.dark div.list-item,
+body.dark div.list-item input,
+body.dark::placeholder {
+    color: #f1f1f1 !important;
+}
+
+div.list-item input[type="text"],
+div.list-item div.list-input {
+    width: 95%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+div.list-item input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+.fas.fa-plus {
+    color: #4f4dde;
+}
+
+.fas.fa-plus:hover {
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through !important;
+}
+
+.active {
+    color: #4f4dde !important;
+}
+
+
+/* radio */
+
+.roundedTwo {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    margin: 10px auto;
+    background: #fcfff4;
+    border-radius: 50%;
+}
+
+body.dark .roundedTwo {
+    background: grey;
+}
+
+body.dark .list-input {
+    color: #f1f1f1 !important;
+}
+
+.roundedTwo label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background-color: #f6d327;
+    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+
+.roundedTwo label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 2px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0.2;
+    transform: rotate(-45deg);
+}
+
+.roundedTwo label:hover::after {
+    opacity: 0.9;
+}
+
+.roundedTwo input[type=checkbox] {
+    visibility: hidden;
+}
+
+.roundedTwo input[type=checkbox]:checked+label:after {
+    opacity: 1;
+    /* background-color: red; */
+}
+
+
+/* list */
+
+ol.todo-list {
+    margin-top: 50px;
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+body.dark ol.todo-list {
+    background-color: #1E1E1E;
+}
+
+ol .list-item {
+    margin: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.5s ease-out;
+}
+
+ol .taskbar {
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    color: grey;
+    margin: 0px 10px;
+    opacity: 1;
+    margin: 10px;
+}
+
+ol .taskbar div:nth-child(2) {
+    margin: 0px 10px !important;
+    transition: 0.2s ease;
+}
+
+ol .taskbar div:nth-child(2) div:hover {
+    cursor: pointer;
+    color: #4f4dde;
+}
+
+ol .taskbar div:nth-child(3):hover {
+    cursor: pointer;
+    color: crimson;
+}
+
+ol .list-item i {
+    margin: 4px;
+    font-size: 1.1rem;
+}
+
+ol .list-item:hover {
+    cursor: pointer;
+}
+
+ol .list-item:hover.list-item i.fa-times,
+ol .list-item:hover.list-item i.fa-grip-lines {
+    opacity: 1;
+}
+
+ol .list-item i.fa-times,
+ol .list-item i.fa-grip-lines {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+ol .list-item i.fa-times {
+    color: rgba(220, 20, 60, 0.452);
+}
+
+ol .list-item i.fa-times:hover {
+    color: crimson;
+}
+
+ol .list-item i.fa-grip-lines {
+    color: grey;
+}
+
+ol .list-item i.fa-grip-lines:hover {
+    color: black;
+}
+
+ol .list-item input {
+    font-size: 1.2rem !important;
+}
+
+ol .list-item.remove {
+    transform: translateX(30vw);
+    opacity: 0;
+}
+
+
+/* button at the end */
+
+
+/* footer */
+
+footer {
+    background-color: #f1f1f1;
+    color: #111;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+body.dark footer {
+    background-color: #292929;
+}
+
+footer i {
+    margin: 0px 10px;
+}
+
+footer i.fa-instagram {
+    color: purple;
+}
+
+footer i.fa-linkedin {
+    color: dodgerblue;
+}
+
+footer i.fa-github {
+    color: #111;
+}
+
+body.dark footer i.fa-github {
+    color: #f1f1f1
+}
+
+body.dark footer i.fa-instagram {
+    color: #de4daa
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #4f4dde;
+    text-decoration: none;
+}
+
+
+/* top checkbox */
+
+#switch {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label.switch-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 35px;
+    background: #fff;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+label.switch-label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background: #f6d327;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input#switch:checked+label.switch-label {
+    background: #111;
+}
+
+input#switch:checked+label.switch-label:after {
+    background: #E63E6D;
+}
+
+input#switch:checked+label.switch-label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label.switch-label:active:after {
+    width: 80px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/b862bb0d81.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <header></header>
+    <section class="list-container">
+        <div class="container">
+            <h2>
+                Todo List <input type="checkbox" id="switch" /><label class="switch-label" for="switch">Toggle</label
+          >
+        </h2>
+        <div class="list">
+          <div class="list-item">
+            <input placeholder="Add a task to the List..." type="text" />
+            <i class="fas fa-plus"></i>
+          </div>
+          <ol class="todo-list">
+            <div class="taskbar list-item">
+              <div>5 Items left</div>
+              <div style="display: flex">
+                <div class="active" id="all">All</div>
+                <div id="pending">Pending</div>
+                <div id="complete">Completed</div>
+              </div>
+              <div class="clear">Clear</div>
+            </div>
+            <div class="items"></div>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <a target="_blank" href="https://github.com/kartik18g"> Kartik Gupta</a>
+      </div>
+      <div>
+        <a href="https://github.com/kartik18g"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/kartik-gupta-3275651b8/"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <a href="https://github.com/kartik18g"> <i class="fa fa-github"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
