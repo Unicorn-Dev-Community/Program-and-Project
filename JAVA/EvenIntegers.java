@@ -21,7 +21,7 @@ public class EvenIntegers {
     }
 
     /*
-     * main method
+     * main method of the program
      */
     public static void main(String[] args) {
 
